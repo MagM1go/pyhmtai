@@ -3,10 +3,10 @@ import requests
 import typing as t
 from contextlib import AsyncContextDecorator, ContextDecorator
 
-from data.routes.nsfw import NsfwData
-from data.routes.sfw import SfwData
-from data.constants import BASE_API_URL
-from api.http import HmtaiHttpAware, AIOHmtaiHttpAware
+from pyhmtai.data.routes.nsfw import NsfwData
+from pyhmtai.data.routes.sfw import SfwData
+from pyhmtai.data.constants import BASE_API_URL
+from pyhmtai.api.http import HmtaiHttpAware, AIOHmtaiHttpAware
 
 RequestTypes = t.Literal["nsfw", "sfw"]
 Endpoints = t.Union[NsfwData, SfwData]

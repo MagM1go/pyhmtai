@@ -1,9 +1,9 @@
 import typing as t
 
-from impl.http import HmtaiHttp, AIOHmtaiHttp
-from data.routes.nsfw import NsfwData
-from data.routes.sfw import SfwData
-from data.exceptions import ApiNotAvailable
+from pyhmtai.impl.http import HmtaiHttp, AIOHmtaiHttp
+from pyhmtai.data.routes.nsfw import NsfwData
+from pyhmtai.data.routes.sfw import SfwData
+from pyhmtai.data.exceptions import ApiNotAvailable
 
 
 class PyHMTai:

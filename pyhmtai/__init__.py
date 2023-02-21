@@ -1,1 +1,1 @@
-from hmtai import *
+from pyhmtai.hmtai import *
