@@ -12,7 +12,7 @@ class PyHMTai:
     def nsfw_image(self, endpoint: NsfwData) -> t.Dict[str, str] | None:
         request_type = "nsfw"
 
-        if self._http.check_api_status(request_type) != 200:
+        if self._http.check_api_status('nsfw') != 200:
             raise ApiNotAvailable("Api may not working, try later.")
     
         with self._http as api:
@@ -21,7 +21,7 @@ class PyHMTai:
     def sfw_image(self, endpoint: SfwData) -> t.Dict[str, str] | None:
         request_type = "sfw"
 
-        if self._http.check_api_status(request_type) != 200:
+        if self._http.check_api_status('sfw') != 200:
             raise ApiNotAvailable("Api may not working, try later.")
 
         with self._http as api:
@@ -34,7 +34,7 @@ class AIOPyHMTai:
     async def nsfw_image(self, endpoint: NsfwData) -> t.Dict[str, str]:
         request_type = "nsfw"
         
-        if await self._http.check_api_status(request_type) != 200:
+        if await self._http.check_api_status('nsfw') != 200:
             raise ApiNotAvailable("Api may not working, try later.")
     
         async with self._http as api:
@@ -43,7 +43,7 @@ class AIOPyHMTai:
     async def sfw_image(self, endpoint: SfwData) -> t.Dict[str, str]:
         request_type = "sfw"
 
-        if await self._http.check_api_status(request_type) != 200:
+        if await self._http.check_api_status('sfw') != 200:
             raise ApiNotAvailable("Api may not working, try later.")
 
         async with self._http as api:
