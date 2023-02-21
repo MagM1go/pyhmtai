@@ -7,8 +7,8 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text(encoding="utf8")
 
 setup(
-	name="PyHMtai",
-	version="0.1.1",
+	name="pyhmtai",
+	version="0.1.2",
 	author="MagMigo",
 	description="HMtai python port.",
 	long_description=README,
