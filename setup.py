@@ -8,7 +8,7 @@ README = (HERE / "README.md").read_text(encoding="utf8")
 
 setup(
 	name="pyhmtai",
-	version="0.1.2",
+	version="0.1",
 	author="MagMigo",
 	description="HMtai python port.",
 	long_description=README,
