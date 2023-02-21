@@ -1,7 +1,7 @@
 import typing as t
 from abc import ABC, abstractmethod
 
-from pyhmtai.data.routes.nsfw import NsfwData
+from pyhmtai.internal.routes.nsfw import NsfwData
 
 TYPES = t.Literal["nsfw", "sfw"]
 

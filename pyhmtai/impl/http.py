@@ -3,9 +3,9 @@ import requests
 import typing as t
 from contextlib import AsyncContextDecorator, ContextDecorator
 
-from pyhmtai.data.routes.nsfw import NsfwData
-from pyhmtai.data.routes.sfw import SfwData
-from pyhmtai.data.constants import BASE_API_URL
+from pyhmtai.internal.routes.nsfw import NsfwData
+from pyhmtai.internal.routes.sfw import SfwData
+from pyhmtai.internal.constants import BASE_API_URL
 from pyhmtai.api.http import HmtaiHttpAware, AIOHmtaiHttpAware
 
 RequestTypes = t.Literal["nsfw", "sfw"]
