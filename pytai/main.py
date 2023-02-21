@@ -6,7 +6,7 @@ from data.routes.sfw import SfwData
 from data.exceptions import ApiNotAvailable
 
 
-class PyTai:
+class PyHMTai:
     _http = HmtaiHttp()
 
     def nsfw_image(self, endpoint: NsfwData) -> t.Dict[str, str] | None:
@@ -28,7 +28,7 @@ class PyTai:
             return api.request_image(request_type, endpoint).json()
 
 
-class AIOPyTai:
+class AIOPyHMTai:
     _http = AIOHmtaiHttp()
 
     async def nsfw_image(self, endpoint: NsfwData) -> t.Dict[str, str]:
