@@ -1,7 +1,7 @@
-[PyHMTai]
+# PyHMTai
 Simple python port of HMtai
 
-[Examples]
+# Examples
 ```python
 from pyhmtai import PyHMTai, AIOPyHMTai
 
